@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Jamie Goodson's Website</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-	<link href='style.css' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MMU Simulator</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Merriweather&display=swap" rel="stylesheet">	<link href='style.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div id="mainContainer">
+<div id="topContainer">
 	<div id="title">
-		<h1>Memory Management</h1><h3>An Online Simulation</h3>
+		<h1>Memory Management Unit Simulator</h1>
 	</div>
 
 	<div id="rightContainer">
@@ -20,14 +22,14 @@
 	<div id="leftContainer">
 		<h2>Add Process</h2>
 		<form id="processForm">
-			<input type="text" name="processSize" placeholder="Process size" autocomplete="off" />
-			<input type="text" name="processTime" placeholder="Process time" autocomplete="off" />
+			<input type="text" name="processSize" placeholder="Process size in KB" autocomplete="off" />
+			<input type="text" name="processTime" placeholder="Process time in seconds" autocomplete="off" />
 			<button type="submit" style="display:none;" /></button>
 		</form>
 		<br><br>
 		<h2>Process Queue</h2>
 		<table id="processTable">
-			<tr><th>Process ID</th><th>Size (K)</th><th>Time Units Remaining</th></tr>
+			<tr><th>Process ID</th><th>Size (KB)</th><th>Time Units Remaining</th></tr>
 		</table>
 		<br>
 		<br>
